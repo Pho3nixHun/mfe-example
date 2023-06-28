@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "paths": {
+      "@app/*": ["projects/mfe-one/src/app/*"],
+      "@env/*": ["projects/mfe-one/src/environments/*"],
+      "@core/*": ["projects/mfe-one/src/app/core/*"],
+      "@shared/*": ["projects/mfe-one/src/app/shared/*"],
+      "@pages/*": ["projects/mfe-one/src/app/pages/*"],
+    }
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

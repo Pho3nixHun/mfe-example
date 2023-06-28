@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "paths": {
+      "@app/*": ["projects/host/src/app/*"],
+      "@env/*": ["projects/host/src/environments/*"],
+      "@core/*": ["projects/host/src/app/core/*"],
+      "@shared/*": ["projects/host/src/app/shared/*"],
+      "@pages/*": ["projects/host/src/app/pages/*"],
+    }
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
